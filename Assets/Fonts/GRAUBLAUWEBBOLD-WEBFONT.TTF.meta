@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 71f0e2abfd0b8e348963dff49166051e
+timeCreated: 1500021684
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Graublau Web
+  fontNames:
+  - Graublau Web
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 43859fee89981724fb62d49fc18fa95c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

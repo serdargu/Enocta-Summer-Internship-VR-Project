@@ -1,0 +1,121 @@
+{
+  "system_params": {
+    
+  },
+  "total_scenes": 1,
+  "scenes" : [
+    { 
+      "name": "Bedroom",
+      "total_questions": 2,
+      "countdown_time": 15,
+      "light_color": "red",
+      "questions": [ 
+        { 
+          "description": "Duvarlar ne renkti?",
+          "answers": [
+            {"answer": "Kırmızı", "correct": false},
+            {"answer": "Mavi", "correct": true},
+            {"answer": "Yeşil", "correct": false},
+            {"answer": "Sarı", "correct": false}
+          ]
+        },
+        { 
+          "description": "Yatağın üstünde kaç yastık vardı?",
+          "answers": [
+            {"answer": "4", "correct": false},
+            {"answer": "3", "correct": false},
+            {"answer": "2", "correct": true},
+            {"answer": "1", "correct": false}
+          ]
+        }
+      ]
+    },
+    { 
+      "name": "Club",
+      "total_questions": 3,
+      "countdown_time": 20,
+      "light_color": "red",
+      "questions": [ 
+        { 
+          "description": "Kaç tabure vardı?",
+          "answers": [
+            {"answer": "1", "correct": false},
+            {"answer": "2", "correct": false},
+            {"answer": "3", "correct": false},
+            {"answer": "4", "correct": true}
+          ]
+        },
+        { 
+          "description": "Duvarda asılı kaç tablo vardı?",
+          "answers": [
+            {"answer": "3", "correct": false},
+            {"answer": "4", "correct": true},
+            {"answer": "5", "correct": false},
+            {"answer": "1", "correct": false}
+          ]
+        },
+        { 
+          "description": "Kaç tane merdiven gördünüz?",
+          "answers": [
+            {"answer": "1", "correct": false},
+            {"answer": "2", "correct": false},
+            {"answer": "3", "correct": true},
+            {"answer": "4", "correct": false}
+          ]
+        }
+      ]
+    },
+	{ 
+      "name": "Kitchen",
+      "total_questions": 2,
+      "countdown_time": 20,
+      "light_color": "red",
+      "questions": [ 
+        { 
+          "description": "Kaç sandalye vardı?",
+          "answers": [
+            {"answer": "6", "correct": true},
+            {"answer": "4", "correct": false},
+            {"answer": "2", "correct": false},
+            {"answer": "8", "correct": false}
+          ]
+        },
+        { 
+          "description": "Tezgahın solundaki dolap kaç raflıydı?",
+          "answers": [
+            {"answer": "1", "correct": false},
+            {"answer": "2", "correct": false},
+            {"answer": "3", "correct": false},
+            {"answer": "4", "correct": true}
+          ]
+        }
+      ]
+    },
+	{ 
+      "name": "Living",
+      "total_questions": 2,
+      "countdown_time": 20,
+      "light_color": "red",
+      "questions": [ 
+        { 
+          "description": "Kaç farklı renkte kitap vardı?",
+          "answers": [
+            {"answer": "6", "correct": false},
+            {"answer": "4", "correct": true},
+            {"answer": "2", "correct": false},
+            {"answer": "8", "correct": false}
+          ]
+        },
+        { 
+          "description": "Hangi obje pencere önünde değildi?",
+          "answers": [
+            {"answer": "Lambader", "correct": true},
+            {"answer": "Kanepe", "correct": false},
+            {"answer": "Saksı", "correct": false},
+            {"answer": "Kitap", "correct": false}
+          ]
+        }
+      ]
+    }
+  ]
+}
