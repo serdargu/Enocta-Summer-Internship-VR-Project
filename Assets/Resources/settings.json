@@ -1,118 +1,65 @@
 {
-  "system_params": {
-    
-  },
+  "system_params": {},
   "total_scenes": 1,
-  "scenes" : [
-    { 
+  "scenes": [
+    {
       "name": "Bedroom",
       "total_questions": 2,
-      "countdown_time": 15,
+      "countdown_time": 2,
       "light_color": "red",
-      "questions": [ 
-        { 
+      "questions": [
+        {
           "description": "Duvarlar ne renkti?",
+          "fb": true,
+          "fbType": "video",
           "answers": [
-            {"answer": "Kırmızı", "correct": false},
-            {"answer": "Mavi", "correct": true},
-            {"answer": "Yeşil", "correct": false},
-            {"answer": "Sarı", "correct": false}
+            {
+              "answer": "K�rm�z�",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+              "answer": "Mavi",
+              "correct": true,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp47"
+            },
+            {
+              "answer": "Ye�il",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+              "answer": "Sar�",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            }
           ]
         },
-        { 
-          "description": "Yatağın üstünde kaç yastık vardı?",
+        {
+          "description": "Duvarlar ne renkti?",
+          "fb": true,
+          "fbType": "text",
           "answers": [
-            {"answer": "4", "correct": false},
-            {"answer": "3", "correct": false},
-            {"answer": "2", "correct": true},
-            {"answer": "1", "correct": false}
-          ]
-        }
-      ]
-    },
-    { 
-      "name": "Club",
-      "total_questions": 3,
-      "countdown_time": 20,
-      "light_color": "red",
-      "questions": [ 
-        { 
-          "description": "Kaç tabure vardı?",
-          "answers": [
-            {"answer": "1", "correct": false},
-            {"answer": "2", "correct": false},
-            {"answer": "3", "correct": false},
-            {"answer": "4", "correct": true}
-          ]
-        },
-        { 
-          "description": "Duvarda asılı kaç tablo vardı?",
-          "answers": [
-            {"answer": "3", "correct": false},
-            {"answer": "4", "correct": true},
-            {"answer": "5", "correct": false},
-            {"answer": "1", "correct": false}
-          ]
-        },
-        { 
-          "description": "Kaç tane merdiven gördünüz?",
-          "answers": [
-            {"answer": "1", "correct": false},
-            {"answer": "2", "correct": false},
-            {"answer": "3", "correct": true},
-            {"answer": "4", "correct": false}
-          ]
-        }
-      ]
-    },
-	{ 
-      "name": "Kitchen",
-      "total_questions": 2,
-      "countdown_time": 20,
-      "light_color": "red",
-      "questions": [ 
-        { 
-          "description": "Kaç sandalye vardı?",
-          "answers": [
-            {"answer": "6", "correct": true},
-            {"answer": "4", "correct": false},
-            {"answer": "2", "correct": false},
-            {"answer": "8", "correct": false}
-          ]
-        },
-        { 
-          "description": "Tezgahın solundaki dolap kaç raflıydı?",
-          "answers": [
-            {"answer": "1", "correct": false},
-            {"answer": "2", "correct": false},
-            {"answer": "3", "correct": false},
-            {"answer": "4", "correct": true}
-          ]
-        }
-      ]
-    },
-	{ 
-      "name": "Living",
-      "total_questions": 2,
-      "countdown_time": 20,
-      "light_color": "red",
-      "questions": [ 
-        { 
-          "description": "Kaç farklı renkte kitap vardı?",
-          "answers": [
-            {"answer": "6", "correct": false},
-            {"answer": "4", "correct": true},
-            {"answer": "2", "correct": false},
-            {"answer": "8", "correct": false}
-          ]
-        },
-        { 
-          "description": "Hangi obje pencere önünde değildi?",
-          "answers": [
-            {"answer": "Lambader", "correct": true},
-            {"answer": "Kanepe", "correct": false},
-            {"answer": "Saksı", "correct": false},
-            {"answer": "Kitap", "correct": false}
+            {
+              "answer": "K�rm�z�",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+              "answer": "Mavi",
+              "correct": true,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp47"
+            },
+            {
+              "answer": "Ye�il",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+              "answer": "Sar�",
+              "correct": false,
+              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
+            }
           ]
         }
       ]

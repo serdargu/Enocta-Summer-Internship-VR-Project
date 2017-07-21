@@ -32,6 +32,8 @@ public class Question
 {
     public string description;
     public List<Answer> answers;
+    public bool fb;
+    public string fbType;
 }
 
 [System.Serializable]
@@ -39,4 +41,5 @@ public class Answer
 {
     public string answer;
     public bool correct;
+    public string feedback;
 }

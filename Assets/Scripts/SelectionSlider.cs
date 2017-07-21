@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Linq;
 
 namespace VRStandardAssets.Utils
 {
@@ -32,20 +34,10 @@ namespace VRStandardAssets.Utils
         [SerializeField] public bool m_TrueAnswer;                          // Whether the answer is correct or not.
         [SerializeField] public Image m_FilledBackground;
 
-        [SerializeField]
-        SelectionSlider answer1ButtonSelectionSlider;
-        [SerializeField]
-        SelectionSlider answer2ButtonSelectionSlider;
-        [SerializeField]
-        SelectionSlider answer3ButtonSelectionSlider;
-        [SerializeField]
-        SelectionSlider answer4ButtonSelectionSlider;
-
         public bool m_BarFilled;                                            // Whether the bar is currently filled.
         private bool m_GazeOver;                                            // Whether the user is currently looking at the bar.
         private float m_Timer;                                              // Used to determine how much of the bar should be filled.
         private Coroutine m_FillBarRoutine;                                 // Reference to the coroutine that controls the bar filling up, used to stop it if required.
-
 
         private const string k_SliderMaterialPropertyName = "_SliderValue"; // The name of the property on the SlidingUV shader that needs to be changed in order for it to fill.
 
@@ -145,20 +137,17 @@ namespace VRStandardAssets.Utils
             // If the loop has finished the bar is now full.
             m_BarFilled = true;
 
-            if (answer1ButtonSelectionSlider)
+            if (m_BarFilled && m_TrueAnswer)
             {
-                if (m_BarFilled && m_TrueAnswer)
+                m_FilledBackground.color = Color.green;
+            }
+            else
+            {
+                m_FilledBackground.color = Color.red;
+                GameObject[] buttons = GameObject.FindGameObjectsWithTag("Button");
+                foreach (GameObject button in buttons)
                 {
-                    m_FilledBackground.color = Color.green;
-                }
-                else
-                {
-                    m_FilledBackground.color = Color.red;
-
-                    if (answer1ButtonSelectionSlider.m_TrueAnswer) answer1ButtonSelectionSlider.m_Slider.GetComponentInChildren<Image>().color = Color.green;
-                    else if (answer2ButtonSelectionSlider.m_TrueAnswer) answer2ButtonSelectionSlider.m_Slider.GetComponentInChildren<Image>().color = Color.green;
-                    else if (answer3ButtonSelectionSlider.m_TrueAnswer) answer3ButtonSelectionSlider.m_Slider.GetComponentInChildren<Image>().color = Color.green;
-                    else if (answer4ButtonSelectionSlider.m_TrueAnswer) answer4ButtonSelectionSlider.m_Slider.GetComponentInChildren<Image>().color = Color.green;
+                    if (button.GetComponent<SelectionSlider>().m_TrueAnswer) button.GetComponent<SelectionSlider>().m_Slider.GetComponentInChildren<Image>().color = Color.green;
                 }
             }
 
