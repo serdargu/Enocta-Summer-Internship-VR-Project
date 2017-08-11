@@ -6,6 +6,8 @@ using UnityEngine;
 public class Settings
 {
     public int total_scenes;
+    public string api_key;
+    public string lang;
     public List<Scene> scenes;
 
     public static Settings CreateFromJSON()
@@ -32,8 +34,10 @@ public class Question
 {
     public string description;
     public List<Answer> answers;
-    public bool fb;
-    public string fbType;
+    public bool has_feedback;
+    public string fb_type;
+    public string answer_type;
+    public string correct_answer;
 }
 
 [System.Serializable]
@@ -42,4 +46,5 @@ public class Answer
     public string answer;
     public bool correct;
     public string feedback;
+
 }

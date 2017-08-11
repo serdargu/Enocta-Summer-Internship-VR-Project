@@ -17,22 +17,40 @@ namespace VRStandardAssets.Utils
 
         public event Action OnBarFilled;                                    // This event is triggered when the bar finishes filling.
 
-        [SerializeField] private float m_Duration = 2f;                     // The length of time it takes for the bar to fill.
-        [SerializeField] private AudioSource m_Audio;                       // Reference to the audio source that will play effects when the user looks at it and when it fills.
-        [SerializeField] private AudioClip m_OnOverClip;                    // The clip to play when the user looks at the bar.
-        [SerializeField] private AudioClip m_OnFilledClip;                  // The clip to play when the bar finishes filling.
-        [SerializeField] public Slider m_Slider;                           // Optional reference to the UI slider (unnecessary if using a standard Renderer).
-        [SerializeField] private VRInteractiveItem m_InteractiveItem;       // Reference to the VRInteractiveItem to determine when to fill the bar.
-        [SerializeField] private VRInput m_VRInput;                         // Reference to the VRInput to detect button presses.
-        [SerializeField] private GameObject m_BarCanvas;                    // Optional reference to the GameObject that holds the slider (only necessary if DisappearOnBarFill is true).
-        [SerializeField] private Renderer m_Renderer;                       // Optional reference to a renderer (unnecessary if using a UI slider).
-        [SerializeField] private SelectionRadial m_SelectionRadial;         // Optional reference to the SelectionRadial, if non-null the duration of the SelectionRadial will be used instead.
-        [SerializeField] private UIFader m_UIFader;                         // Optional reference to a UIFader, used if the SelectionSlider needs to fade out.
-        [SerializeField] private Collider m_Collider;                       // Optional reference to the Collider used to detect the user's gaze, turned off when the UIFader is not visible.
-        [SerializeField] private bool m_DisableOnBarFill;                   // Whether the bar should stop reacting once it's been filled (for single use bars).
-        [SerializeField] private bool m_DisappearOnBarFill;                 // Whether the bar should disappear instantly once it's been filled.
-        [SerializeField] public bool m_TrueAnswer;                          // Whether the answer is correct or not.
-        [SerializeField] public Image m_FilledBackground;
+        [SerializeField]
+        private float m_Duration = 2f;                     // The length of time it takes for the bar to fill.
+        [SerializeField]
+        private AudioSource m_Audio;                       // Reference to the audio source that will play effects when the user looks at it and when it fills.
+        [SerializeField]
+        private AudioClip m_OnOverClip;                    // The clip to play when the user looks at the bar.
+        [SerializeField]
+        private AudioClip m_OnFilledClip;                  // The clip to play when the bar finishes filling.
+        [SerializeField]
+        public Slider m_Slider;                           // Optional reference to the UI slider (unnecessary if using a standard Renderer).
+        [SerializeField]
+        private VRInteractiveItem m_InteractiveItem;       // Reference to the VRInteractiveItem to determine when to fill the bar.
+        [SerializeField]
+        private VRInput m_VRInput;                         // Reference to the VRInput to detect button presses.
+        [SerializeField]
+        private GameObject m_BarCanvas;                    // Optional reference to the GameObject that holds the slider (only necessary if DisappearOnBarFill is true).
+        [SerializeField]
+        private Renderer m_Renderer;                       // Optional reference to a renderer (unnecessary if using a UI slider).
+        [SerializeField]
+        private SelectionRadial m_SelectionRadial;         // Optional reference to the SelectionRadial, if non-null the duration of the SelectionRadial will be used instead.
+        [SerializeField]
+        private UIFader m_UIFader;                         // Optional reference to a UIFader, used if the SelectionSlider needs to fade out.
+        [SerializeField]
+        private Collider m_Collider;                       // Optional reference to the Collider used to detect the user's gaze, turned off when the UIFader is not visible.
+        [SerializeField]
+        private bool m_DisableOnBarFill;                   // Whether the bar should stop reacting once it's been filled (for single use bars).
+        [SerializeField]
+        private bool m_DisappearOnBarFill;                 // Whether the bar should disappear instantly once it's been filled.
+        [SerializeField]
+        public bool m_TrueAnswer;                          // Whether the answer is correct or not.
+        [SerializeField]
+        public Image m_FilledBackground;
+        [SerializeField]
+        public string m_Feedback;
 
         public bool m_BarFilled;                                            // Whether the bar is currently filled.
         private bool m_GazeOver;                                            // Whether the user is currently looking at the bar.

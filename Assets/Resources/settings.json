@@ -1,68 +1,162 @@
 {
-  "system_params": {},
-  "total_scenes": 1,
-  "scenes": [
-    {
-      "name": "Bedroom",
-      "total_questions": 2,
-      "countdown_time": 2,
-      "light_color": "red",
-      "questions": [
-        {
-          "description": "Duvarlar ne renkti?",
-          "fb": true,
-          "fbType": "video",
-          "answers": [
-            {
-              "answer": "K�rm�z�",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            },
-            {
-              "answer": "Mavi",
-              "correct": true,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp47"
-            },
-            {
-              "answer": "Ye�il",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            },
-            {
-              "answer": "Sar�",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            }
-          ]
-        },
-        {
-          "description": "Duvarlar ne renkti?",
-          "fb": true,
-          "fbType": "text",
-          "answers": [
-            {
-              "answer": "K�rm�z�",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            },
-            {
-              "answer": "Mavi",
-              "correct": true,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp47"
-            },
-            {
-              "answer": "Ye�il",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            },
-            {
-              "answer": "Sar�",
-              "correct": false,
-              "feedback": "https://www.w3schools.com/html/mov_bbb.mp4"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"api_key" : "AIzaSyAjbTIs3XCTGkhCBGyihJME24l3duua8PI",
+	"lang" : "tr-TR",
+	"total_scenes": 4,
+	"scenes": 
+	[
+		{
+			"name": "Kitchen",
+			"total_questions": 2,
+			"countdown_time": 30,
+			"questions": 
+			[
+				{
+					"description": "Tezgahın solundaki dolap kaç raflıydı?",
+					"answer_type": "stt",
+					"correct_answer": "4"
+				},
+				{
+					"description": "Kaç tane sandalye vardı?",
+					"answer_type": "stt",
+					"correct_answer": "5"
+				}
+			]
+		},
+		{
+			"name": "Bedroom",
+			"total_questions": 2,
+			"countdown_time": 15,
+			"questions": 
+			[
+				{
+					"description": "Yatağın üzerinde kaç tane yastık vardı?",
+					"has_feedback": true,
+					"fb_type": "video",
+					"answer_type": "multiple_choices",
+					"answers": 
+					[
+						{
+							"answer": "1",
+							"correct": false,
+							"feedback": "mov_bbb"
+						},
+						{
+							"answer": "2",
+							"correct": true,
+							"feedback": "mov_bbb"
+						},
+						{
+							"answer": "3",
+							"correct": false,
+							"feedback": "mov_bbb"
+						}
+					]
+				},
+				{
+					"description": "Duvarlar ne renkti?",
+					"answer_type": "stt",
+					"correct_answer": "mavi"
+				}
+			]
+		},
+		{
+			"name": "Club",
+			"total_questions": 2,
+			"countdown_time": 30,
+			"questions": 
+			[
+				{
+					"description": "Kaç tabure vardı?",
+					"has_feedback": true,
+					"fb_type": "text",
+					"answer_type": "multiple_choices",
+					"answers": 
+					[
+						{
+							"answer": "1",
+							"correct": false,
+							"feedback": "1. seçeneğin feedbacki"
+						},
+						{
+							"answer": "2",
+							"correct": false,
+							"feedback": "2. seçeneğin feedbacki"
+						},
+						{
+							"answer": "3",
+							"correct": false,
+							"feedback": "3. seçeneğin feedbacki"
+						},
+						{
+							"answer": "4",
+							"correct": true,
+							"feedback": "4. seçeneğin feedbacki"
+						},
+						{
+							"answer": "5",
+							"correct": false,
+							"feedback": "5. seçeneğin feedbacki"
+						},
+						{
+							"answer": "6",
+							"correct": false,
+							"feedback": "6. seçeneğin feedbacki"
+						}
+					]
+				},
+				{
+					"description": "Duvarda asılı kaç tablo vardı?",
+					"answer_type": "stt",
+					"correct_answer": "4"
+				}
+			]
+		},
+		{
+			"name": "Livingroom",
+			"total_questions": 2,
+			"countdown_time": 30,
+			"questions": 
+			[
+				{
+					"description": "Kaç farklı renkte kitap vardı?",
+					"has_feedback": true,
+					"fb_type": "text",
+					"answer_type": "multiple_choices",
+					"answers": 
+					[
+						{
+							"answer": "1",
+							"correct": false,
+							"feedback": "1. seçeneğin feedbacki"
+						},
+						{
+							"answer": "2",
+							"correct": false,
+							"feedback": "2. seçeneğin feedbacki"
+						},
+						{
+							"answer": "3",
+							"correct": false,
+							"feedback": "3. seçeneğin feedbacki"
+						},
+						{
+							"answer": "4",
+							"correct": true,
+							"feedback": "4. seçeneğin feedbacki"
+						},
+						{
+							"answer": "5",
+							"correct": false,
+							"feedback": "5. seçeneğin feedbacki"
+						}
+					]
+				},
+				{
+					"description": "Kanepelerin rengi nedir?",
+					"answer_type": "stt",
+					"correct_answer": "kırmızı"
+				}
+			]
+		}
+	]
 }
